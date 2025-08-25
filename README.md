@@ -1,25 +1,12 @@
-# ATV
-
-## Variability–Power Simulation (MATLAB)
-
-This repository contains a documented MATLAB implementation to simulate trialwise time series with two temporal regimes—an initial high-variability window (0–500 ms) followed by a low-variability window (500–1500 ms)—across multiple subjects and trials. It computes per-subject power and variability (as defined below) within the low-variability window and examines their correlation across subjects. The code also reproduces example plots (overlaid trials, time-varying across-trial variability) and a correlation scatter with a regression line for each simulation condition.
-
-Reproducibility: The main script sets a fixed random seed (rng(42)), so results are deterministic unless you change it.
-Requirements: MATLAB R2019b or newer (earlier versions may work). No toolbox dependencies; the regression line uses polyfit/polyval (base MATLAB).
-
-
-
-## Citation
-doi: https://doi.org/10.1101/2025.03.27.645661
-
-
 # README.md
 
 ## Variability–Power Simulation (MATLAB)
 
-This repository contains a clean, documented MATLAB implementation to simulate trialwise time series with two temporal regimes—an initial **high-variability** window (0–500 ms) followed by a **low-variability** window (500–1500 ms)—across multiple subjects and trials. It computes per-subject **power** and **variability** (as defined below) within the low-variability window and examines their correlation across subjects. The code also reproduces example plots (overlaid trials, time-varying across-trial variability) and a correlation scatter with regression line for each simulation condition.
+This repository contains a documented MATLAB implementation to simulate trialwise time series with two temporal regimes—an initial **high-variability** window (0–500 ms) followed by a **low-variability** window (500–1500 ms)—across multiple subjects and trials. It computes per-subject **power** and **variability** (as defined below) within the low-variability window and examines their correlation across subjects. The code also reproduces example plots (overlaid trials, time-varying across-trial variability) and a correlation scatter with a regression line for each simulation condition.
 
 > **Reproducibility:** The main script sets a fixed random seed (`rng(42)`), so results are deterministic unless you change it.
+Requirements: MATLAB R2019b or newer (earlier versions may work). No toolbox dependencies; the regression line uses polyfit/polyval (base MATLAB).
+
 
 ### What the script does
 
@@ -41,7 +28,7 @@ This repository contains a clean, documented MATLAB implementation to simulate t
 
 ### Requirements
 
-* MATLAB R2019b or newer (earlier versions may work).
+* MATLAB R2019b or newer.
 * No toolbox dependencies; the regression line uses `polyfit`/`polyval` (base MATLAB).
 
 ### Getting started
@@ -66,11 +53,6 @@ simulate_variability_power
 * `randomSeed` (42)
 * `saveFigures` (false → set `true` to export to `../figures/`)
 
-### Outputs
-
-* For **subject 1** in each condition: overlaid trials and the time-resolved across-trial variability (TTV).
-* For **all subjects** in each condition: scatter of **Power vs. Variability** with regression line, Pearson’s *r* and *p*.
-* Optional: figures saved as PNGs in `figures/` if `saveFigures = true`.
 
 ### Repository structure
 
@@ -79,27 +61,16 @@ variability-power-simulation/
 ├─ README.md
 ├─ src/
 │  └─ simulate_variability_power.m
-├─ figures/            # created on first save (optional)
-├─ .gitignore          # recommended patterns for MATLAB
-└─ LICENSE             # MIT (or your choice)
+├─ figures/           
+├─ .gitignore         
+└─ LICENSE            
 ```
 
 ### License
 
-MIT License (recommended). You can switch to any OSI-approved license to match your needs.
+MIT License.
+
 
 ### Citation
+doi: https://doi.org/10.1101/2025.03.27.645661
 
-If you use this code, please cite the GitHub repository and the Zenodo DOI (once minted):
-
-```
-@software{your_name_YYYY_variability_power,
-  author       = {Your Name},
-  title        = {Variability–Power Simulation (MATLAB)},
-  year         = {YYYY},
-  publisher    = {Zenodo},
-  version      = {v1.0.0},
-  doi          = {10.5281/zenodo.XXXXXXX},
-  url          = {https://doi.org/10.5281/zenodo.XXXXXXX}
-}
- 
