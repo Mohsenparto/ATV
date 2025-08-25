@@ -1,0 +1,31 @@
+# MATLAB autosave / backup files
+*.asv
+*.autosave
+*.bak
+
+# MATLAB binary files
+*.mat
+*.mex*
+*.mdl
+*.slx
+*.slxp
+*.sldd
+*.mlappinstall
+*.mltbx
+
+# Simulink cache & project files
+slprj/
+sccprj/
+*.info
+
+# Figures
+*.fig
+
+# Generated code / artifacts
+codegen/
+html/
+
+# OS-specific junk
+.DS_Store
+Thumbs.db
+desktop.ini
