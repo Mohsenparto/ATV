@@ -54,18 +54,6 @@ simulate_variability_power
 * `saveFigures` (false → set `true` to export to `../figures/`)
 
 
-### Repository structure
-
-```
-variability-power-simulation/
-├─ README.md
-├─ src/
-│  └─ simulate_variability_power.m
-├─ figures/           
-├─ .gitignore         
-└─ LICENSE            
-```
-
 ### License
 
 MIT License.
