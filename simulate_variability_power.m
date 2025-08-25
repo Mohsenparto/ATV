@@ -1,7 +1,3 @@
-
-
-# src/simulate\_variability\_power.m
-
 %% simulate_variability_power.m
 % Simulation of trialwise signals with two variability regimes
 % and correlation analysis between per-subject power and variability.
@@ -191,7 +187,7 @@ if ~isempty(overlayLines)
     end
 end
 
-%% Helper: safe PNG export (works across MATLAB versions)
+%% PNG export (works across MATLAB versions)
 function save_png(figHandle, outPath)
     try
         exportgraphics(figHandle, outPath, 'Resolution', 300);
@@ -200,22 +196,4 @@ function save_png(figHandle, outPath)
         print(figHandle, outPath, '-dpng', '-r300');
     end
 end
-```
 
----
-
-# .gitignore (recommended)
-
-```gitignore
-# MATLAB
-*.asv
-*.autosave
-*.mex*
-*~
-*.mat
-*.fig
-*.slprj/
-.DS_Store
-# OS artifacts
-Thumbs.db
-```
