@@ -35,8 +35,8 @@ Requirements: MATLAB R2019b or newer (earlier versions may work). No toolbox dep
 
 ```bash
 # Clone this repository
-git clone https://github.com/<your-username>/variability-power-simulation.git
-cd variability-power-simulation/src
+git clone https://github.com/Mohsenparto/ATV.git
+cd variability-power-simulation
 
 # Run in MATLAB
 simulate_variability_power
